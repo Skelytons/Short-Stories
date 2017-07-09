@@ -1,2 +1,2 @@
 # Short-Stories
-School Project
+This is my repository for my School Project
