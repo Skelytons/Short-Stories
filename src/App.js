@@ -5,6 +5,7 @@ import { HiddenOnlyAuth, VisibleOnlyAuth } from './util/wrappers.js'
 // UI Components
 import LoginButtonContainer from './user/ui/loginbutton/LoginButtonContainer'
 import LogoutButtonContainer from './user/ui/logoutbutton/LogoutButtonContainer'
+import ShortStoriesContainer from './layouts/ui/navigation/shortstoriesbutton/ShortStoriesContainer'
 
 // Styles
 import './css/oswald.css'
@@ -40,6 +41,7 @@ class App extends Component {
         <nav className="navbar pure-menu pure-menu-horizontal">
           <Link to="/" className="pure-menu-heading pure-menu-link">Short Stories</Link>
           <ul className="pure-menu-list navbar-right">
+            <ShortStoriesContainer />
             <OnlyGuestLinks />
             <OnlyAuthLinks />
           </ul>
